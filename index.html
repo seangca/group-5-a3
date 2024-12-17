@@ -16,6 +16,7 @@
         #sticky-sidebar {
             position: sticky;
             top: 55px;
+            max-width: fit-content;
             height: 80vh;
             overflow-y: scroll;
         }
@@ -42,6 +43,18 @@
             background-color: darkred;
             color: white;
         }
+
+        .footer-text {
+            font-size: 1rem;
+        }
+
+
+        @media (max-width: 576px) {
+            .footer-text {
+                font-size: 0.65rem;
+            }
+        }
+
     </style>
 </head>
 
@@ -55,7 +68,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto"> <!-- Aligns items to the right -->
                     <li class="nav-item">
                         <a class="nav-link" href="mona.html">Mona</a>
                     </li>
@@ -72,11 +85,11 @@
 
     <div class="container-fluid">
         <div class="row flex-nowrap">
-            <div class="col-auto px-0 bg-light shadow-sm" id="sticky-sidebar">
+            <div class="col-auto px-0 bg-light shadow-sm rounded" id="sticky-sidebar">
                 <div id="sidebar" class="sticky-top collapse collapse-horizontal show border-end">
-                    <div id="sidebar-nav" class="list-group border-0 rounded text-sm-start min-vh-100 px-1">
+                    <div id="sidebar-nav" class="list-group border-0 rounded text-sm-start min-vh-100 px-1 pt-3">
 
-                        <h5 class="pt-3">Blog Posts</h5>
+                        <h5>Blog Posts</h5>
                         <a href="#post1"
                             class="bg-info text-white list-group-item border rounded d-inline-block text-truncate"
                             data-bs-parent="#sidebar">Mona and Tenley Fighting</a>
@@ -196,23 +209,34 @@
                                     tincidunt. Proin eget faucibus nisi. Donec finibus facilisis felis non consectetur.
                                     Aliquam quis volutpat tellus, vitae condimentum urna. Praesent vitae augue
                                     fringilla, pretium eros vel, ultrices lectus.</p>
-                                <p>Nunc eleifend mauris quam, sed vulputate ante semper vitae. Interdum et malesuada fames ac ante ipsum 
-                                    primis in faucibus. Curabitur varius ex et ante viverra, vel fringilla quam luctus. Lorem ipsum dolor sit 
-                                    amet, consectetur adipiscing elit. Donec quis libero non purus hendrerit tempor. Nullam libero ante, dictum 
-                                    Page 4 of 7 
-                                    © Red Deer Polytechnic 
-                                    All Rights Reserved 
-                                    CPRO 1101 Assignment 3 
-                                    Due 11:59PM on December 18th 
-                                    et eros nec, iaculis tempus dolor. Praesent sit amet mollis velit. Suspendisse aliquet convallis sapien, ut 
+                                <p>Nunc eleifend mauris quam, sed vulputate ante semper vitae. Interdum et malesuada
+                                    fames ac ante ipsum
+                                    primis in faucibus. Curabitur varius ex et ante viverra, vel fringilla quam luctus.
+                                    Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Donec quis libero non purus hendrerit tempor.
+                                    Nullam libero ante, dictum
+                                    Page 4 of 7
+                                    © Red Deer Polytechnic
+                                    All Rights Reserved
+                                    CPRO 1101 Assignment 3
+                                    Due 11:59PM on December 18th
+                                    et eros nec, iaculis tempus dolor. Praesent sit amet mollis velit. Suspendisse
+                                    aliquet convallis sapien, ut
                                     pretium magna iaculis vitae. Donec lobortis nibh et lorem pellentesque luctus.</p>
-                                <p>Duis et augue laoreet, pellentesque metus in, bibendum nulla. Fusce ut ante leo. Sed ullamcorper felis at 
-                                    eros facilisis, nec dignissim eros lobortis. Pellentesque nec luctus lorem, sit amet facilisis sapien. Vivamus 
-                                    et massa tempor, mollis risus sit amet, elementum ipsum. Aliquam massa quam, maximus vitae congue ac, 
-                                    pretium a sapien. Nullam faucibus neque a libero feugiat pharetra. In quis turpis eu metus pharetra volutpat. 
-                                    Mauris nisi felis, hendrerit sit amet erat at, interdum lobortis nisi. Maecenas at nulla at eros varius vehicula. 
-                                    Mauris mollis sem orci, vel fermentum dui aliquet a. Etiam tristique sit amet velit eget iaculis. In ultrices 
-                                    volutpat dignissim. In mollis eros at ipsum convallis tempor. Fusce at orci ac mi elementum sollicitudin.</p>
+                                <p>Duis et augue laoreet, pellentesque metus in, bibendum nulla. Fusce ut ante leo. Sed
+                                    ullamcorper felis at
+                                    eros facilisis, nec dignissim eros lobortis. Pellentesque nec luctus lorem, sit amet
+                                    facilisis sapien. Vivamus
+                                    et massa tempor, mollis risus sit amet, elementum ipsum. Aliquam massa quam, maximus
+                                    vitae congue ac,
+                                    pretium a sapien. Nullam faucibus neque a libero feugiat pharetra. In quis turpis eu
+                                    metus pharetra volutpat.
+                                    Mauris nisi felis, hendrerit sit amet erat at, interdum lobortis nisi. Maecenas at
+                                    nulla at eros varius vehicula.
+                                    Mauris mollis sem orci, vel fermentum dui aliquet a. Etiam tristique sit amet velit
+                                    eget iaculis. In ultrices
+                                    volutpat dignissim. In mollis eros at ipsum convallis tempor. Fusce at orci ac mi
+                                    elementum sollicitudin.</p>
                             </div>
                         </div>
                     </div>
@@ -231,7 +255,7 @@
 
 
     <footer class="bg-body-tertiary text-center text-lg-start sticky-bottom">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        <div class="text-center p-3 footer-text" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2024 Copyright:
             <a class="text-body">Group#5</a>
         </div>
