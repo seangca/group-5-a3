@@ -39,21 +39,6 @@
             scrollbar-width: none;
         }
 
-        .badge-mona {
-            background-color: darkmagenta;
-            color: white;
-        }
-
-        .badge-tenley {
-            background-color: saddlebrown;
-            color: white;
-        }
-
-        .badge-maxwell {
-            background-color: darkred;
-            color: white;
-        }
-
         li::marker {
             font-size: 0;
         }
@@ -68,7 +53,6 @@
                 font-size: 0.65rem;
             }
         }
-
     </style>
 </head>
 
@@ -82,7 +66,8 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+
+            <section class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" href="mona.html">Mona</a>
@@ -94,7 +79,7 @@
                         <a class="nav-link" href="maxwell.html">Maxwell</a>
                     </li>
                 </ul>
-            </div>
+            </section>
         </div>
     </nav>
 
@@ -102,37 +87,39 @@
         <div class="row flex-nowrap">
             <div class="col-auto px-0 bg-light rounded shadow-sm" id="sticky-sidebar">
 
-                <div id="sidebar" class="sticky-top collapse collapse-horizontal show border-end">
+                <aside id="sidebar" class="sticky-top collapse collapse-horizontal show border-end">
                     <div id="sidebar-nav" class="list-group border-0 rounded text-sm-start min-vh-100 px-1 pt-3">
 
-                        <div class="card mb-3">
+                        <article class="card mb-3">
                             <img src="Mona/mona4.jpg" class="card-img-top" alt="Card Image 1">
                             <div class="card-body">
                                 <h5 class="card-title">Grooming</h5>
                                 <p class="card-text">Mona grooming herself.</p>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="card mb-3">
+                        <article class="card mb-3">
                             <img src="Mona/mona5.jpg" class="card-img-top" alt="Card Image 2">
                             <div class="card-body">
                                 <h5 class="card-title">Gaming</h5>
                                 <p class="card-text">Mona laying on my PC.</p>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="card mb-3">
+                        <article class="card mb-3">
                             <img src="Mona/mona6.jpg" class="card-img-top" alt="Card Image 3">
                             <div class="card-body">
                                 <h5 class="card-title">Snack Time!</h5>
                                 <p class="card-text">Mona looking for snacks.</p>
                             </div>
-                        </div>
+                        </article>
+
                     </div>
-                </div>
+                </aside>
 
 
             </div>
+
             <main class="col ps-md-2 pt-2">
 
                 <div class="page-header pt-2">
@@ -140,10 +127,10 @@
                 </div>
                 <hr>
 
-                <div class="row mb-4">
+                <section class="row mb-4">
                     <div class="col-12">
                         <div class="card border rounded-3">
-                            <div class="card-body" id="post1">
+                            <article class="card-body" id="post1">
                                 <h4 class="card-title">About Mona</h4>
                                 <p class="card-text mt-2">“Mona is my sweet little weirdo – she is about 6 years old
                                     now. At first glance, she seems
@@ -164,40 +151,46 @@
                                     Despite her being a bit of a brat, she’s always been there for me, and I look
                                     forward to
                                     having her be a little pest for the years to come!”</p>
-                            </div>
+                            </article>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div id="carouselExampleIndicators" class="carousel slide pb-3" data-bs-ride="carousel">
+                <section id="carouselExampleIndicators" class="carousel slide pb-3" data-bs-ride="carousel">
                     <ol class="carousel-indicators pb-3">
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
                     </ol>
+
                     <div class="carousel-inner rounded">
-                        <div class="carousel-item active">
+
+                        <figure class="carousel-item active">
                             <img class="d-block w-100" src="Mona/mona1.jpg" alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Laying Down</h5>
                                 <p>Mona laying down after her breakfast.</p>
                             </div>
-                        </div>
-                        <div class="carousel-item">
+                        </figure>
+
+                        <figure class="carousel-item">
                             <img class="d-block w-100" src="Mona/mona2.jpg" alt="Second slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Mona Resting</h5>
                                 <p>Mona is a resting on a cat tree.</p>
                             </div>
-                        </div>
-                        <div class="carousel-item">
+                        </figure>
+
+                        <figure class="carousel-item">
                             <img class="d-block w-100" src="Mona/mona3.jpg" alt="Third slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>More Mona.</h5>
                                 <p>Another picture of Mona resting.</p>
                             </div>
-                        </div>
+                        </figure>
+
                     </div>
+
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -208,10 +201,8 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only"></span>
                     </a>
-                </div>
 
-
-
+                </section>
 
         </div>
     </div>
@@ -220,12 +211,12 @@
     </div>
     </div>
 
-    <div class="position-sticky pb-2 px-1" style="bottom: 55px; left: 0; right: 0; z-index: 1010;">
+    <section class="position-sticky pb-2 px-1" style="bottom: 55px; left: 0; right: 0; z-index: 1010;">
         <button type="button" data-bs-target="#sidebar" data-bs-toggle="collapse"
             class="btn btn-secondary w-100 shadow-sm">
             <i class="bi bi-list"></i> Toggle Sidebar
         </button>
-    </div>
+    </section>
 
 
 
@@ -236,8 +227,10 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
